@@ -1,0 +1,28 @@
+.expense {
+	border: 0.125rem solid white;
+	border-radius: 1rem;
+	width: clamp(16rem, 50%, 50%);
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	text-align: center;
+}
+
+.expense > * {
+	place-self: center;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+}
+
+.expense__name {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.expense__price {
+	grid-area: 1 / 2 / 2 / 3;
+}
+
+.expense__date {
+	grid-area: 2 / 1 / 3 / 3;
+}
