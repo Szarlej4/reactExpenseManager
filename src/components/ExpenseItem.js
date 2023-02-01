@@ -1,14 +1,16 @@
 import "./ExpenseItem.css";
+import Card from "./Card";
+import ExpenseDate from "./ExpenseDate";
 
-function ExpenseItem(expense) {
-	console.log(expense);
-	const { name, price, date } = expense.expense;
+function ExpenseItem(props) {
+	const { name, price, date } = props.expense;
+
 	return (
-		<div className="expense">
+		<Card className="expense">
+			<ExpenseDate date={date} />
 			<p className="expense__name">{name}</p>
-			<div className="expense__price">${price}</div>
-			<div className="expense__date">{date.toLocaleDateString()}</div>
-		</div>
+			<p className="expense__price">${price}</p>
+		</Card>
 	);
 }
 
