@@ -1,11 +1,13 @@
 import "./ExpenseItem.css";
 
-function ExpenseItem() {
+function ExpenseItem(expense) {
+	console.log(expense);
+	const { name, price, date } = expense.expense;
 	return (
 		<div className="expense">
-			<p className="expense__name">Car Insurance</p>
-			<div className="expense__price">$1294.67</div>
-			<div className="expense__date">01-04-2013</div>
+			<p className="expense__name">{name}</p>
+			<div className="expense__price">${price}</div>
+			<div className="expense__date">{date.toLocaleDateString()}</div>
 		</div>
 	);
 }
