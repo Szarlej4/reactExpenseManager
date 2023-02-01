@@ -1,7 +1,6 @@
 .expense {
 	align-items: center;
 	background: #1c1c1c;
-	border: 0.125rem solid white;
 	display: flex;
 	justify-content: start;
 	text-align: center;

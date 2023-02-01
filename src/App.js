@@ -1,7 +1,7 @@
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 import Expense from "./classes/Expense";
 
-function App() {
+const App = () => {
 	const expenses = [
 		new Expense("Car Insurance", 390.49, new Date(2023, 0, 17)),
 		new Expense("New Phone", 799.99, new Date(2022, 10, 28)),
@@ -16,6 +16,6 @@ function App() {
 			<Expenses key="expenses" expenses={expenses} />
 		</main>
 	);
-}
+};
 
 export default App;
