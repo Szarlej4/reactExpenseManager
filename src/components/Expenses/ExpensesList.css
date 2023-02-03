@@ -1,0 +1,7 @@
+.expenses__list {
+	align-items: stretch;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
