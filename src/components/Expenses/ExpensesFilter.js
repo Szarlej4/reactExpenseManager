@@ -20,7 +20,7 @@ const ExpensesFilter = (props) => {
 	const years = props.years;
 
 	const filterChangeHandler = (e) => {
-		props.onFilterYear(e.target.value);
+		props.onFilterYear(+e.target.value);
 	};
 
 	return (
