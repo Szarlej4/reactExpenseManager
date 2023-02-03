@@ -1,0 +1,62 @@
+.filter {
+	align-items: stretch;
+	display: grid;
+	flex-direction: column;
+	gap: 1rem;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr auto;
+}
+
+.filter__select {
+	appearance: none;
+	background: #1c1c1c;
+	border: none;
+	border-radius: 0.5rem;
+	box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.25);
+	color: white;
+	font-size: 1.5rem;
+	justify-self: end;
+	margin-right: 1rem;
+	padding: 1rem 3rem;
+	position: relative;
+	text-align: center;
+	transition: filter 0.15s ease-in;
+}
+
+.filter__select:hover {
+	cursor: pointer;
+	filter: brightness(1.2);
+}
+
+.filter__text {
+	font-size: 1.75rem;
+	font-weight: bold;
+	margin-left: 1rem;
+	align-self: center;
+}
+
+.filter__graph {
+	align-items: center;
+	background: #383c5c;
+	display: grid;
+	row-gap: 2rem;
+	grid-area: -2 / -3 / -1 / -1;
+	grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+	justify-content: space-around;
+	padding: 1.5rem 1rem 1rem 1rem;
+}
+
+.graph__month {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	gap: 0.5rem;
+}
+
+.month__column {
+	border-radius: 1rem;
+	height: 10rem;
+	width: 1.5rem;
+	background: white;
+}
