@@ -17,7 +17,10 @@ const ExpenseForm = (props) => {
 
 	const dateChangeHandler = (e) => {
 		setDate(e.target.value);
-		console.log(date);
+	};
+
+	const switchFormVisible = () => {
+		props.onSwitchVisible();
 	};
 
 	const submitHandler = (e) => {
@@ -28,6 +31,7 @@ const ExpenseForm = (props) => {
 		setName("");
 		setAmount("");
 		setDate("");
+		props.onSwitchVisible();
 	};
 
 	return (
@@ -74,9 +78,14 @@ const ExpenseForm = (props) => {
 					/>
 				</div>
 			</div>
-			<button className="form__button" type="submit">
-				Add Expense
-			</button>
+			<div className="form__buttons">
+				<button className="form__button" type="submit">
+					Add Expense
+				</button>
+				<button onClick={switchFormVisible} className="form__button">
+					Cancel
+				</button>
+			</div>
 		</form>
 	);
 };

@@ -1,0 +1,9 @@
+.chart {
+	align-items: center;
+	background: #383c5c;
+	display: grid;
+	row-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+	justify-content: space-around;
+	padding: 1.5rem 1rem 1rem 1rem;
+}

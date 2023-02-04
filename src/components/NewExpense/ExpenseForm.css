@@ -30,8 +30,13 @@
 	width: 100%;
 }
 
+.form__buttons {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+	gap: 1rem;
+}
+
 .form__button {
-	align-self: end;
 	background: #1c1c1c;
 	border: none;
 	border-radius: 1rem;

@@ -1,0 +1,23 @@
+.chart__data-point {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	gap: 0.5rem;
+}
+
+.data-point__column {
+	background: white;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	height: 10rem;
+	justify-content: end;
+	overflow: hidden;
+	width: 1.5rem;
+}
+
+.column__inner {
+	border-radius: 0 0 1rem 1rem;
+	background: #a57fff;
+}

@@ -1,5 +1,6 @@
 .new-expense {
 	background: #2f2f2f;
+	display: grid;
 	padding: 1rem;
 	width: 100%;
 }
